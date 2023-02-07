@@ -7,7 +7,7 @@ import { Spacer } from '../../assets/style';
 import { Botoes, Container, Grid, Image, Paragraph, Title } from './style';
 
 export default function Content1() {
-  const media = useMediaQuery('(min-width: 1024px)');
+  const media = useMediaQuery('(min-width: 900px)');
 
   if (!media) {
     return (

@@ -23,25 +23,23 @@ export const Grid = styled.header`
   }
 
   @media (min-width: 901px) and (max-width: 1280px) {
-    width: 95%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 80%;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
   @media (min-width: 1281px) and (max-width: 1440px) {
-    width: 90%;
+    width: 80%;
     padding-left: 5%;
     padding-right: 5%;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 40px;
 }
 
   @media (min-width: 1441px) {
@@ -67,6 +65,7 @@ export const Title = styled.h1`
   line-height: ${(props) => props.fontlineheight || '54px'};
   display:flex;
   justify-content: center;
+  text-align: center;
 
   text-transform: capitalize;
 
@@ -80,16 +79,18 @@ export const Title = styled.h1`
 
     @media (min-width: 901px) and (max-width: 1280px) {
   font-weight: 600px;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 54px;
+  text-align: start;
   }
 
 
 
     @media (min-width: 1281px) and (max-width: 1440px) {
   font-weight: 600px;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 54px;
+  text-align: start;
   
 }
 
@@ -97,6 +98,7 @@ export const Title = styled.h1`
     font-weight: 600px;
     font-size: 55px;
     line-height: 54px;
+    text-align: start;
   }
 `;
 
@@ -116,9 +118,9 @@ export const Image = styled.div`
   }
 
   @media (min-width: 901px) and (max-width: 1280px) {
-    width: 450px;
-    height: 450px;
-    background-size: 450px;
+    width: 350px;
+    height: 350px;
+    background-size: 350px;
   }
 
   @media (min-width: 1281px) and (max-width: 1440px) {
@@ -156,7 +158,7 @@ export const Paragraph = styled.p`
 
         @media (min-width: 901px) and (max-width: 1280px) {
   font-weight: 600px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 15px 0;
   line-height: 30px;
   text-align: start;
@@ -164,7 +166,7 @@ export const Paragraph = styled.p`
 
   @media (min-width: 1281px) and (max-width: 1440px) {
     font-weight: 600px;
-  font-size: 22px;
+  font-size: 20px;
   padding: 15px 0;
   line-height: 30px;
   text-align: start;

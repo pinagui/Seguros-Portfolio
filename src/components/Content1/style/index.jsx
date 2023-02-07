@@ -23,14 +23,13 @@ export const Grid = styled.header`
   }
 
   @media (min-width: 901px) and (max-width: 1280px) {
-    width: 95%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 80%;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
+
 }
 
   @media (min-width: 1281px) and (max-width: 1440px) {
@@ -41,7 +40,7 @@ export const Grid = styled.header`
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 40px;
 }
 
   @media (min-width: 1441px) {
@@ -84,7 +83,7 @@ export const Title = styled.h1`
 
     @media (min-width: 901px) and (max-width: 1280px) {
   font-weight: 600px;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 54px;
   text-align:start;
   }
@@ -100,7 +99,7 @@ export const Title = styled.h1`
 
   @media (min-width: 1441px) {
     font-weight: 600px;
-    font-size: 55px;
+    font-size: 45px;
     line-height: 54px;
     text-align:start;
   }
@@ -113,6 +112,7 @@ export const Image = styled.div`
   height: 300px;
   background-size: 300px;
   border-radius: 15%;
+  margin: 0 auto;
 
     @media (min-width: 600px) and (max-width: 900px) {
     width: 400px;
@@ -121,21 +121,24 @@ export const Image = styled.div`
   }
 
   @media (min-width: 901px) and (max-width: 1280px) {
-    width: 450px;
-    height: 450px;
-    background-size: 450px;
+    width: 350px;
+    height: 350px;
+    background-size: 350px;
+    margin: 0;
   }
 
   @media (min-width: 1281px) and (max-width: 1440px) {
     width: 520px;
     height: 520px;
     background-size: 520px;
+    margin: 0;
 }
 
   @media (min-width: 1441px) {
     width: 600px;
     height: 600px;
     background-size: 600px;
+    margin: 0;
   }
 `;
 
@@ -158,7 +161,7 @@ export const Paragraph = styled.p`
 
         @media (min-width: 901px) and (max-width: 1280px) {
   font-weight: 600px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 15px 0;
   line-height: 30px;
   text-align: start;

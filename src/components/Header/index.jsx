@@ -7,7 +7,7 @@ import { Spacer } from '../../assets/style';
 import { Botoes, Container, Grid, Image, Paragraph, Title } from './style';
 
 export default function Header() {
-  const media = useMediaQuery('(min-width: 1024px)');
+  const media = useMediaQuery('(min-width: 900px)');
 
   if (!media) {
     return (
@@ -20,18 +20,8 @@ export default function Header() {
             fontweight="700"
             fontsize="26px"
             fontlineheight="36px"
-
           >
             Seguro Para Você
-          </Title>
-
-          <Title
-            font="Poppins"
-            fontstyle="normal"
-            fontweight="700"
-            fontsize="26px"
-            fontlineheight="36px"
-          >
             E Seus Entes Queridos
 
           </Title>
