@@ -2,7 +2,7 @@
 /* eslint-disable max-len */
 import { useMediaQuery } from '@mui/material';
 import { BsPlayFill } from 'react-icons/bs';
-import photo from '../../assets/images/photo.jpg';
+import photo from '../../assets/images/photo.png';
 import { Spacer } from '../../assets/style';
 import { Botoes, Container, Grid, Image, Paragraph, Title } from './style';
 

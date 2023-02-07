@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-max-depth */
 /* eslint-disable max-len */
 import { useMediaQuery } from '@mui/material';
-import { BsPlayFill } from 'react-icons/bs';
-import photo from '../../assets/images/photo.jpg';
+import photo from '../../assets/images/photo.png';
 import { Spacer } from '../../assets/style';
 import { Botoes, Container, Grid, Image, Paragraph, Title } from './style';
 
@@ -28,7 +27,7 @@ export default function Content1() {
 
           <Spacer />
 
-          <Image src={ photo } />
+          <Image src={photo} />
 
           <Spacer />
 
@@ -67,7 +66,7 @@ export default function Content1() {
       <Spacer />
       <Grid>
 
-        <Image src={ photo } />
+        <Image src={photo} />
 
         <div>
 
