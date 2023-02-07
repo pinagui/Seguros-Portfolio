@@ -2,9 +2,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
-
+  background-color: #FFFFFF;
 `;
 
 export const Grid = styled.header`
@@ -41,7 +41,7 @@ export const Grid = styled.header`
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 60px;
 }
 
   @media (min-width: 1441px) {
@@ -52,7 +52,7 @@ export const Grid = styled.header`
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
 }
 
 
@@ -67,36 +67,42 @@ export const Title = styled.h1`
   line-height: ${(props) => props.fontlineheight || '54px'};
   display:flex;
   justify-content: center;
+  text-align:center;
 
   text-transform: capitalize;
 
-  color: #FFFFFF;
+  color: #282A2E;
 
       @media (min-width: 600px) and (max-width: 900px) {
   font-weight: 600px;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 54px;
+  text-align:center;
+  width: 80%;
+  margin: 0 auto;
   }
 
     @media (min-width: 901px) and (max-width: 1280px) {
   font-weight: 600px;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 54px;
+  text-align:start;
   }
 
 
 
     @media (min-width: 1281px) and (max-width: 1440px) {
   font-weight: 600px;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 54px;
-  
+  text-align:start;
 }
 
   @media (min-width: 1441px) {
     font-weight: 600px;
     font-size: 55px;
     line-height: 54px;
+    text-align:start;
   }
 `;
 
@@ -107,7 +113,6 @@ export const Image = styled.div`
   height: 300px;
   background-size: 300px;
   border-radius: 15%;
-  margin: 0 auto;
 
     @media (min-width: 600px) and (max-width: 900px) {
     width: 400px;
@@ -125,14 +130,12 @@ export const Image = styled.div`
     width: 520px;
     height: 520px;
     background-size: 520px;
-    margin: 0;
 }
 
   @media (min-width: 1441px) {
     width: 600px;
     height: 600px;
     background-size: 600px;
-    margin: 0;
   }
 `;
 
@@ -145,8 +148,7 @@ export const Paragraph = styled.p`
   display:flex;
   justify-content: center;
   text-align: center;
-
-  color: rgba(255, 255, 255, 0.6);
+  color: ${(props) => props.color || 'rgba(255, 255, 255, 0.6)'};
 
         @media (min-width: 600px) and (max-width: 900px) {
   font-weight: 500px;
@@ -185,8 +187,9 @@ export const Botoes = styled.div`
   align-items: center;
   justify-content: center;
   gap: 25px;
-
+  
   button.first {
+  width: ${(props) => props.width || '100%'};
   border: none;
 
   padding: 20px;
@@ -197,7 +200,7 @@ export const Botoes = styled.div`
   :hover {
     cursor: pointer;
     transition: .5s;
-    background: #FFFF;
+    background: #2fa8fe63;
     color: #2FA8FE;
 
     .firsttext{

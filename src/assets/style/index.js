@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle` * {
 
 export const Container = styled.div`
   background: linear-gradient(109.95deg, #0C2F62 26.62%, #24497E 60.83%);
-  height: 5000px;
+  height: 2500px;
   `;
 
 export const Spacer = styled.div`
