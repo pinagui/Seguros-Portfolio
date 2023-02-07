@@ -147,8 +147,7 @@ export const Paragraph = styled.p`
   display:flex;
   justify-content: center;
   text-align: center;
-
-  color: rgba(255, 255, 255, 0.6);
+  color: ${(props) => props.color || 'rgba(255, 255, 255, 0.878)'};
 
         @media (min-width: 600px) and (max-width: 900px) {
   font-weight: 500px;
@@ -193,17 +192,17 @@ export const Botoes = styled.div`
 
   padding: 20px;
   decoration: none;
-  background: #2FA8FE;
+  background: #FFFF;
   border-radius: 24px;
 
   :hover {
     cursor: pointer;
     transition: .5s;
-    background: #FFFF;
+    background: #093a23a3;
     color: #2FA8FE;
 
     .firsttext{
-      color: #2FA8FE;
+      color: #FFF;
     }
 
   }
@@ -220,17 +219,17 @@ export const Botoes = styled.div`
   :hover {
     cursor: pointer;
     transition: .7s;
-    background: #2FA8FE;
+    background: #093a23a3;
 
   .play{
-        color: #FFFF;
+        color: #FFF;
       }
   }
     
     .play {
       width: 24px;
       height: 24px;
-      color: #2FA8FE;
+      color: #0AaF62;
     }
 
   }

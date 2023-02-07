@@ -28,7 +28,7 @@ export default function Header() {
 
           <Spacer />
 
-          <Image src={ photo } />
+          <Image src={photo} />
 
           <Spacer />
 
@@ -47,6 +47,7 @@ export default function Header() {
                 className="firsttext"
                 fontweight="600"
                 fontsize="18px"
+                color='#0AaF62'
               >
                 Comece Agora
               </Paragraph>
@@ -99,8 +100,9 @@ export default function Header() {
                 className="firsttext"
                 fontweight="600"
                 fontsize="24px"
+                color='#0AaF62'
               >
-                Comece Agora
+                Começe Agora
               </Paragraph>
 
             </button>
@@ -111,7 +113,7 @@ export default function Header() {
 
         </div>
 
-        <Image src={ photo } />
+        <Image src={photo} />
 
       </Grid>
     </Container>

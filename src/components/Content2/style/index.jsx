@@ -1,10 +1,56 @@
 /* eslint-disable max-lines */
 import styled from 'styled-components';
 
+export const ContainerDisplay = styled.div`
+
+
+  @media (min-width: 768px) and (max-width: 900px) {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 901px)  and (max-width: 1279px) {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+    @media (min-width: 1280px)  and (max-width: 1440px) {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+      @media (min-width: 1441px) {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+`
+
 export const Container = styled.div`
   width: 100%;
-  margin: 0 auto;
-  background-color: #FFFFFF;
+  display: flex;
+
+
+    @media (min-width: 901px)  and (max-width: 1279px) {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+    @media (min-width: 1280px)  and (max-width: 1440px) { }
+
+          @media (min-width: 1441px) {
+  }
+
 `;
 
 export const Grid = styled.header`
@@ -22,25 +68,16 @@ export const Grid = styled.header`
     text-align: center;
   }
 
-  @media (min-width: 901px) and (max-width: 1280px) {
-    width: 80%;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-
+  @media (min-width: 901px) and (max-width: 1279px) {
 }
 
-  @media (min-width: 1281px) and (max-width: 1440px) {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+  @media (min-width: 1280px) and (max-width: 1440px) {
+    width: 80%;
     grid-template-columns: 1fr 1fr;
+    gap: 100px;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 40px;
 }
 
   @media (min-width: 1441px) {
@@ -67,78 +104,49 @@ export const Title = styled.h1`
   display:flex;
   justify-content: center;
   text-align:center;
+  padding-top: 20px;
 
   text-transform: capitalize;
-
-  color: #282A2E;
+  color: ${(props) => props.color || '#282A2E'};
 
       @media (min-width: 600px) and (max-width: 900px) {
   font-weight: 600px;
-  font-size: 30px;
+  font-size: 35px;
   line-height: 54px;
   text-align:center;
   width: 80%;
   margin: 0 auto;
+  padding-top: 20px;
   }
 
-    @media (min-width: 901px) and (max-width: 1280px) {
+    @media (min-width: 901px) and (max-width: 1279px) {
   font-weight: 600px;
-  font-size: 30px;
+  font-size: 42px;
   line-height: 54px;
-  text-align:start;
+  text-align:center;
   }
 
 
 
-    @media (min-width: 1281px) and (max-width: 1440px) {
+    @media (min-width: 1280px) and (max-width: 1359px) {
   font-weight: 600px;
   font-size: 40px;
   line-height: 54px;
   text-align:start;
 }
 
-  @media (min-width: 1441px) {
-    font-weight: 600px;
-    font-size: 45px;
-    line-height: 54px;
-    text-align:start;
-  }
-`;
-
-export const Image = styled.div`
-  background-image: url(${(props) => props.src});
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  background-size: 300px;
-  border-radius: 15%;
-  margin: 0 auto;
-
-    @media (min-width: 600px) and (max-width: 900px) {
-    width: 400px;
-    height: 400px;
-    background-size: 400px;
-  }
-
-  @media (min-width: 901px) and (max-width: 1280px) {
-    width: 350px;
-    height: 350px;
-    background-size: 350px;
-    margin: 0;
-  }
-
-  @media (min-width: 1281px) and (max-width: 1440px) {
-    width: 520px;
-    height: 520px;
-    background-size: 520px;
-    margin: 0;
+    @media (min-width: 1360px) and (max-width: 1440px) {
+  font-weight: 600px;
+  font-size: 44px;
+  line-height: 54px;
+  text-align:start;
 }
 
   @media (min-width: 1441px) {
-    width: 600px;
-    height: 600px;
-    background-size: 600px;
-    margin: 0;
+    font-weight: 600px;
+    font-size: 55px;
+    line-height: 64px;
+    text-align:start;
   }
 `;
 
@@ -151,23 +159,27 @@ export const Paragraph = styled.p`
   display:flex;
   justify-content: center;
   text-align: center;
-  color: ${(props) => props.color || 'rgba(255, 255, 255, 0.996)'};
+  color: ${(props) => props.color || 'rgba(255, 255, 255, 0.974)'};
 
         @media (min-width: 600px) and (max-width: 900px) {
+          width: 80%;
+          margin: 0 auto;
   font-weight: 500px;
   font-size: 20px;
   line-height: 26px;
   }
 
-        @media (min-width: 901px) and (max-width: 1280px) {
+        @media (min-width: 901px) and (max-width: 1279px) {
   font-weight: 600px;
-  font-size: 16px;
+  font-size: 22px;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
   padding: 15px 0;
   line-height: 30px;
-  text-align: start;
 }
 
-  @media (min-width: 1281px) and (max-width: 1440px) {
+  @media (min-width: 1280px) and (max-width: 1440px) {
     font-weight: 600px;
   font-size: 22px;
   padding: 15px 0;
@@ -179,7 +191,7 @@ export const Paragraph = styled.p`
   font-weight: 600px;
   font-size: 24px;
   padding: 15px 0;
-  line-height: 30px;
+  line-height: 40px;
   text-align: start;
   }
 `;
@@ -197,46 +209,22 @@ export const Botoes = styled.div`
 
   padding: 20px;
   decoration: none;
-  background: #0AaF62;
+  background: #FFF;
   border-radius: 24px;
+  
 
   :hover {
     cursor: pointer;
     transition: .5s;
-    background: #c4f5d6d3;
+    background: #093a23a3;
 
     .firsttext{
-      color: #0ecf75;
+      color: #FFF;
     }
 
   }
   }
 
-    button.second {
-  background: #FFFFFF;
-
-  padding: 20px;
-  decoration: none;
-  border-radius: 99px;
-  border: none;
-
-  :hover {
-    cursor: pointer;
-    transition: .7s;
-    background: #2FA8FE;
-
-  .play{
-        color: #FFFF;
-      }
-  }
-    
-    .play {
-      width: 24px;
-      height: 24px;
-      color: #2FA8FE;
-    }
-
-  }
 
   @media (min-width: 901px) and (max-width: 1280px) {
     display: flex;

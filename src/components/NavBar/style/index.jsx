@@ -11,11 +11,13 @@ export const Container = styled.div`
     position: absolute;
   left: 85.93%;
   top: 2.35%;
+  color: #d4d4d4;
   }
 
   .hamburger {
     width: 30px;
     height: 30px;
+    color: #d4d4d4;
   }
 
     .x:hover{
@@ -46,6 +48,9 @@ export const NavBarStyled = styled.nav`
   h1 {
     align-content: center;
     padding: 10px 0px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #ebebeb;
   }
 
 
@@ -71,7 +76,7 @@ export const NavBarStyled = styled.nav`
 
     img:hover{
       cursor: pointer;
-      opacity: 0.9;
+      opacity: 0.7;
     
   }
 
@@ -89,6 +94,21 @@ export const Links = styled.div`
   justify-content: space-between;
   width: 300px;
   align-content: center;
+  font-family: 'Poppins'; 
+  color: #ebebeb;
+  
+  font-size: 14px;
+
+  h3 {
+
+    font-weight: 300;
+      :hover {
+    cursor: pointer;
+    opacity: 0.8;
+    color: '#0AaF62';
+  }
+  }
+
 `;
 
 export const HamburgerLinks = styled.div`
@@ -99,11 +119,16 @@ export const HamburgerLinks = styled.div`
   h3 {
     padding: 20px 0;
     font-size: 30px;
+    font-family: 'Poppins';
+
+    font-weight: 300;
+    color: #ebebeb;
   }
 
     h3:hover{
       cursor: pointer;
       opacity: 0.8;
+      color: '#0AaF62';
     
   }
 

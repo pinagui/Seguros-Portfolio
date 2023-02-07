@@ -102,8 +102,9 @@ export default function Content1() {
                 className="firsttext"
                 fontweight="600"
                 fontsize="24px"
+                color='#FFFF'
               >
-                Comece Agora
+                Começe Agora
               </Paragraph>
 
             </button>
