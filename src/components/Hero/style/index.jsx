@@ -1,16 +1,15 @@
 /* eslint-disable max-lines */
 import styled from 'styled-components';
-import bg from '../../../assets/images/bg.jpg';
+import bg from '../../../assets/images/bg.webp';
 import bgt from '../../../assets/images/bgt.jpg';
 import bgm from '../../../assets/images/bgm.jpg';
 
 export const Container = styled.div`
   width: 100%;
-  height: 1200px;
+  height: 800px;
   margin: 0 auto;
   background-image: url(${bgm});
   background-position: top center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 
